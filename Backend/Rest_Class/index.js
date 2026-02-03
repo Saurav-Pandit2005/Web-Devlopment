@@ -28,30 +28,25 @@ let posts = [
   },
 ];
 
-// app.get("/posts", (req, res) => {
-//   res.render("index.ejs", { posts });
-// });
-
-// app.get("/posts/new", (req, res) => {
-//     res.render("new.ejs");
-// } )
-
-// app.post("/posts", (req, res) => {
-//     let {username, content} = req.body;
-//     posts.push({username, content});
-//     // res.send("post request working..")
-//     res.redirect("/posts");
-// })
-
-// app.get("/posts/:id", (req, res) => {
-//     let {id} = req.params;
-//     let post  = posts.find((p) => id === p.id);
-//     console.log(post);
-//     res.render("show.ejs");
-// })
-
 app.get("/posts", (req, res) => {
-  res.render("index.ejs", {posts});
+  res.render("index.ejs", { posts });
+});
+
+app.get("/posts/new", (req, res) => {
+    res.render("new.ejs");
+} )
+
+app.post("/posts", (req, res) => {
+    let {username, content} = req.body;
+    posts.push({username, content});
+    res.redirect("/posts");
+})
+
+app.get("/posts/:id", (req, res) => {
+    let {id} = req.params;
+    let post  = posts.find((p) => id === p.id);
+    // console.log(post);
+    res.render("show.ejs", {post});
 })
 
 app.listen(port, () => {
