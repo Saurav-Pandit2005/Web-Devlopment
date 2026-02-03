@@ -10,23 +10,23 @@ app.set("views", path.join(__dirname, "views"));
 
 app.use(express.static(path.join(__dirname, "public")));
 
-// let posts = [
-//   {
-//     id: "1a",
-//     username: "Saurav",
-//     content: "I love coding..",
-//   },
-//   {
-//     id: "2b",
-//     username: "ShraddhaKhapra",
-//     content: "Hardwork is important to achieve success..",
-//   },
-//   {
-//     id: "3c",
-//     username: "Gautam",
-//     content: "I got my first internship..",
-//   },
-// ];
+let posts = [
+  {
+    id: "1a",
+    username: "Saurav",
+    content: "I love coding..",
+  },
+  {
+    id: "2b",
+    username: "ShraddhaKhapra",
+    content: "Hardwork is important to achieve success..",
+  },
+  {
+    id: "3c",
+    username: "Gautam",
+    content: "I got my first internship..",
+  },
+];
 
 // app.get("/posts", (req, res) => {
 //   res.render("index.ejs", { posts });
@@ -50,8 +50,8 @@ app.use(express.static(path.join(__dirname, "public")));
 //     res.render("show.ejs");
 // })
 
-app.get("/", (req, res) => {
-  res.send("serving working well!!..");
+app.get("/posts", (req, res) => {
+  res.render("index.ejs", {posts});
 })
 
 app.listen(port, () => {
