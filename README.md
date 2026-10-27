@@ -109,4 +109,3 @@ Web-Development/
 
 Passionate about learning and building modern web applications while documenting the complete journey from frontend to backend development.
 
-⭐ If you find this repository useful, consider giving it a star.
