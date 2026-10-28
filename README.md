@@ -106,6 +106,3 @@ Web-Development/
 ## Author
 
 **Saurav Pandit**
-
-Passionate about learning and building modern web applications while documenting the complete journey from frontend to backend development.
-
