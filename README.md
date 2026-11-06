@@ -58,12 +58,6 @@ A comprehensive repository documenting my Web Development journey, including fro
 
 ---
 
-## Goal
-
-This repository serves as a complete roadmap of my Web Development learning journey. It contains notes, code examples, mini-projects, and practice exercises that help build strong frontend, backend, and full-stack development skills.
-
----
-
 ## Technologies Used
 
 ### Frontend
