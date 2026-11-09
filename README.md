@@ -96,7 +96,3 @@ Web-Development/
 ```
 
 ---
-
-## Author
-
-**Saurav Pandit**
